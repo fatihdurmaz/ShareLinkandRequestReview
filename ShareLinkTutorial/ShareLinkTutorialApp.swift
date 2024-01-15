@@ -9,7 +9,17 @@ import SwiftUI
 
 @main
 struct ShareLinkTutorialApp: App {
+    
+    init() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithDefaultBackground()
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().standardAppearance = appearance
+        
+    }
+    
     var body: some Scene {
+        
         WindowGroup {
             ContentView()
         }
